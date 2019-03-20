@@ -1,5 +1,16 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    repoName = "LiuView"
+    userOrg = 'water-mu'
+    groupId = 'com.mumu.lilib'
+    artifactId = 'LiuUtil'
+    publishVersion = '1.0.0'
+    desc = '测试提交jcenter'
+    website = 'https://github.com/water-mu/LiuUtil'
+}
+
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
